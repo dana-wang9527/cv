@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+  </head>
+
+
+<style>* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #eee;
+    margin: 20px 0;
+  }
+
+
+  article {
+    width: 21cm;
+    min-height: 29.7cm;
+    background: white;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em;
+  }</style>
+<style media="print">body {
+    margin: 0;
+  }
+
+  .page2 {
+    page-break-before: always;
+    margin-top: 30px;
+  }</style>
+<style>p {
+    margin: .3em 0;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  strong {
+    font-weight: normal;
+    color: #f60;
+  }
+
+  a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+
+  p,
+  li {
+    color: #666;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  .bio {
+    position: relative;
+  }
+
+  .bio img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }</style>
+
+<style>.projects p {
+    color: #666;
+  }
+
+  .projects strong {
+    color: #f60;
+  }
+
+  .projects>ol {
+    margin-top: 0;
+    list-style-position: inside;
+    padding: 0;
+  }
+
+  .projects>ol>li {
+    margin-bottom: 24px;
+  }
+
+  .projects>ol>li>header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projects>ol>li h3 {
+    display: inline-block;
+  }</style>
+<style>#skills {
+
+    width: 500px;
+    height: 270px;
+  }
+  @media print {
+    #skills{display:none;}
+  }
+.skills>.underScore{
+  color: #f60;
+}
+
+  .skills>.wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills>.wrapper>:first-child {
+    margin-right: 24px;
+  }
+
+
+
+  .skills>.wrapper>ul {
+    color: #666;
+  }
+
+  .skills>.wrapper strong {
+    color: #f60;
+  }
+
+  .skills>.wrapper>ul>li {
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }</style>
+<style>.openSource header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+
+  .openSource>ul>li {
+    margin-bottom: 24px;
+  }
+
+  .openSource header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }</style>
+
+
+
+<style>@media (max-width: 500px) {
+    body {
+      margin: 0;
+    }
+
+    article {
+      width: auto;
+      height: auto;
+    }
+
+    .bio img {
+      display: none;
+    }
+
+    .skills .wrapper {
+      flex-direction: column;
+    }
+
+    #skills {
+      width: auto;
+    }
+  }</style>
+<body>
+  <article>
+    <section class="bio">
+      <h1>李帅</h1>
+      <img src="/cv.d1e9739e.jpg" alt="" width="100" height="130">
+      <p>
+        男 | 23岁 | 初级前端开发工程师 
+      </p>
+      <p>
+        手机：<a href="tel:13813209106">13813209106</a> | 微信：lingshuangdubu | 邮箱：<a href="mailto:2057217108@qq.com">2057217108@qq.com</a>
+    </p></section>
+
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>梨子UI</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
+
+          </p>
+          <p>
+            主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
+
+          </p>
+          <p>
+            已被公司前端同事广泛使用，有效提高前端团队的开发效率。
+
+          </p>
+          <p>
+            制作过程让我对 TypeScript 和单元测试有了新的认识。
+            我将其总结成了一篇博客《TS 泛型的使用》。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>梨子记账React版</h3>
+            <span>
+              <a href="https://github.com/dana-wang9527/react-morney">源码链接</a>
+              <a href="https://dana-wang9527.github.io/react-monery-website/index.html#/home">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是一个基于 <strong>React</strong> / <strong>React Router</strong> / <strong>TypeScript</strong> 实现的极简记账App应用。
+          </p>
+          <p>
+            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+            而且可以通过图表查看自己的消费习惯。
+          </p>
+          <p>
+            使用 styled-components 来实现 在 TypeScript 文件中写样式
+            全程使用 React-hooks API 来写
+            使用 React-Router 来实现路由切换
+            使用 自定义Hooks 来实现全局数据管理
+            使用 localStorage 来进行本地数据存储
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>梨子记账Vue版</h3>
+            <span>
+              <a href="https://github.com/dana-wang9527/BookKeeping">源码链接</a>
+              <a href="https://dana-wang9527.github.io/bookkeeping-website/#/money">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一个基于 <strong>Vue</strong> / <strong>VueRouter</strong> / <strong>Vuex</strong> 的移动端单页面应用。
+          </p>
+
+          <p>
+            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+            而且可以通过图表查看自己的消费习惯。
+          </p>
+          <p>
+            为了支持 typescript,使用 类组件 + 装饰器 的形式来写
+            使用 Vue-Router 来实现路由切换
+            使用 Vuex 来实现全局数据管理
+            使用 localStorage 来进行本地数据存储
+            在父子组件通信中，让子组件修改父组件的值， 使用了 .sync 的语法来实现
+            以 模块化 的思想来分离组件，使用 slot 插槽，props等
+          </p>
+        </li>
+      </ol>
+    </section>
+    <hr>
+
+
+
+
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、React-hooks 等</li>
+          <li>熟悉 ES6，包括 let / Promise / 析构赋值</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+        </ul>
+      </div>
+    </section>
+     <hr>
+
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>自己写的 DOM 库</h3>
+            <a href="https://github.com/dana-wang9527/dom-1">源码链接</a>
+          </header>
+          <p>实现了元素选择、元素创建、删除、修改等常见功能</p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>会动的哆啦A梦</h3>
+            <span>
+              <a href="https://github.com/dana-wang9527/piakchu">源码链接</a>
+              <a href="https://dana-wang9527.github.io/piakchu/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://github.com/dana-wang9527/canvas">源码链接</a>
+              <a href="https://dana-wang9527.github.io/canvas/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+      </ul>
+    </section>
+    <hr>
+
+
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://www.zhihu.com/people/yu-yue-tian-ya">我的博客</a>，学习时的记录</li>
+        <li><a href="https://github.com/dana-wang9527">我的 GitHub</a>，其他的练习项目</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2016年</time>~<time>2020年</time></span>
+        苏州大学 电子信息工程 本科</p>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>

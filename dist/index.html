@@ -93,7 +93,13 @@
     right: 0;
   }</style>
 
-<style>.projects p {
+<style>.image{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .projects p {
     color: #666;
   }
 
@@ -129,31 +135,7 @@
   }
 .skills>.underScore{
   color: #f60;
-}
-
-  .skills>.wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .skills>.wrapper>:first-child {
-    margin-right: 24px;
-  }
-
-
-
-  .skills>.wrapper>ul {
-    color: #666;
-  }
-
-  .skills>.wrapper strong {
-    color: #f60;
-  }
-
-  .skills>.wrapper>ul>li {
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }</style>
+}</style>
 <style>.openSource header img {
     position: absolute;
     top: 0;
@@ -188,10 +170,6 @@
       display: none;
     }
 
-    .skills .wrapper {
-      flex-direction: column;
-    }
-
     #skills {
       width: auto;
     }
@@ -217,26 +195,27 @@
           <header>
             <h3>梨子UI</h3>
             <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/dana-wang9527/pear-ui-code">源码链接</a>
+              <a href="https://dana-wang9527.github.io/pear-UI/#/">项目预览</a>
             </span>
           </header>
           <p>
-            一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
+            梨子UI是一款基于 <strong>Vue3</strong> / <strong>TypeScript</strong>的小型UI框架。
 
           </p>
           <p>
-            主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
+            主要组件有Switch开关、Button按钮、Tabs标签页、Dialog弹出框等。
 
           </p>
           <p>
-            已被公司前端同事广泛使用，有效提高前端团队的开发效率。
+           全程亲手编写，尽量不采用第三方库，但此项目只是自己学习用的，所以没有打包发布到npm上。
 
           </p>
           <p>
-            制作过程让我对 TypeScript 和单元测试有了新的认识。
-            我将其总结成了一篇博客《TS 泛型的使用》。
+            制作UI的过程让我对Vue3有了一定的了解，我还会继续更新组件库，来丰富我的这款UI。
           </p>
+          <h3>扫码预览:</h3>
+          <img class="image" src="/ui.24a143b7.png" alt="" width="60" height="60">
         </li>
         <li>
           <header>
@@ -254,12 +233,14 @@
             而且可以通过图表查看自己的消费习惯。
           </p>
           <p>
-            使用 styled-components 来实现 在 TypeScript 文件中写样式
-            全程使用 React-hooks API 来写
-            使用 React-Router 来实现路由切换
-            使用 自定义Hooks 来实现全局数据管理
+            使用 <strong>styled-components</strong> 来实现在 TypeScript 文件中写样式，
+            全程使用 <strong>React-hooks</strong> API 来写，
+            使用 <strong>React-Router</strong> 来实现路由切换，
+            使用 <strong>自定义Hooks</strong> 来实现全局数据管理，
             使用 localStorage 来进行本地数据存储
           </p>
+          <h3>扫码预览:</h3>
+          <img class="image" src="/react.75ca2bae.png" alt="" width="60" height="60">
         </li>
         <li>
           <header>
@@ -278,13 +259,15 @@
             而且可以通过图表查看自己的消费习惯。
           </p>
           <p>
-            为了支持 typescript,使用 类组件 + 装饰器 的形式来写
-            使用 Vue-Router 来实现路由切换
-            使用 Vuex 来实现全局数据管理
-            使用 localStorage 来进行本地数据存储
-            在父子组件通信中，让子组件修改父组件的值， 使用了 .sync 的语法来实现
-            以 模块化 的思想来分离组件，使用 slot 插槽，props等
+            为了支持 Typescript,使用 <strong> 类组件 + 装饰器</strong> 的形式来写，
+            使用 <strong>Vue-Router</strong> 来实现路由切换，
+            使用 <strong>Vuex</strong> 来实现全局数据管理，
+            使用 localStorage 来进行本地数据存储，
+            在父子组件通信中，让子组件修改父组件的值， 使用了<strong>.sync</strong>的语法来实现，
+            以<strong>模块化</strong>的思想来分离组件，使用 slot 插槽，props等
           </p>
+          <h3>扫码预览:</h3>
+          <img class="image" src="/vue.8f3c7641.png" alt="" width="60" height="60">
         </li>
       </ol>
     </section>
@@ -292,23 +275,19 @@
 
 
 
-
-
-
     <section class="skills">
       <h2>技能</h2>
-      <div class="wrapper">
-        <div id="skills"></div>
-        <ul>
-          <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+        <ul>          
+          <li>熟悉HTML/CSS能够编写 <strong>语义化的 HTML</strong> ，<strong>模块化的 CSS</strong>，熟悉已标准化的 HTML5 / CSS3 新特性</li>
+          <li>能够实现较复杂的布局与动画，熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
           <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
           <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-          <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、React-hooks 等</li>
-          <li>熟悉 ES6，包括 let / Promise / 析构赋值</li>
-          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+          <li>熟练掌握 <strong>React全家桶</strong>的使用，包括 create-react-app、ReactRouter、React-hooks 等</li>
+          <li>熟悉 <strong>ECMAScript6（JavaScript）</strong> ，包括 let / Promise / 析构赋值等</li>
+          <li>了解 <strong>Scss/TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
         </ul>
-      </div>
-    </section>
+      
+    </section> 
      <hr>
 
 
@@ -324,25 +303,35 @@
           </header>
           <p>实现了元素选择、元素创建、删除、修改等常见功能</p>
         </li>
-        <li class="page2">
+        <li>
           <header>
-            <h3>会动的哆啦A梦</h3>
+            <h3>会动的太极图</h3>
             <span>
-              <a href="https://github.com/dana-wang9527/piakchu">源码链接</a>
-              <a href="https://dana-wang9527.github.io/piakchu/dist/index.html">项目预览</a>
+              <a href="https://github.com/dana-wang9527/cv-1">源码链接</a>
+              <a href="https://dana-wang9527.github.io/cv-1/dist/index.html">项目预览</a>
             </span>
           </header>
-          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个作品</p>
         </li>
         <li>
           <header>
-            <h3>简易画板</h3>
+            <h3>简易画图板</h3>
             <span>
               <a href="https://github.com/dana-wang9527/canvas">源码链接</a>
               <a href="https://dana-wang9527.github.io/canvas/index.html">项目预览</a>
             </span>
           </header>
-          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+          <p>这是我在学习 <strong>Canvas</strong> 时制作的一个作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>皮卡丘</h3>
+            <span>
+              <a href="https://github.com/dana-wang9527/piakchu">源码链接</a>
+              <a href="https://dana-wang9527.github.io/piakchu/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>自己在网上找的图进行CSS3练手的作品</p>
         </li>
       </ul>
     </section>
@@ -361,13 +350,14 @@
     <section class="education">
       <h2>教育经历</h2>
       <p>
-        <span><time>2016年</time>~<time>2020年</time></span>
-        苏州大学 电子信息工程 本科</p>
+        <span><time>2016年</time>~<time>2019年</time></span>
+        苏州市职业大学 电子信息工程 专科</p>
+        <p>
+          <span><time>2019年</time>~<time>2020年</time></span>
+          苏州大学 电子信息工程 本科</p>
     </section>
 
   </article>
-  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
-  <script src="/main.1f19ae8e.js"></script>
 </body>
 
 </html>
